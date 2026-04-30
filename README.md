@@ -16,7 +16,7 @@ The agent understands your question → writes SQL → runs it → explains the 
 ---
 
 ## 🧠 How It Works
-
+```
 User Question (Natural Language)
 ↓
 Google Gemini LLM (Text-to-SQL)
@@ -26,7 +26,7 @@ SQL Query Executed on SQLite Database
 Results + AI Business Summary
 ↓
 Streamlit UI (Interactive Dashboard)
-
+```
 ---
 
 ## 🛠️ Tech Stack
@@ -74,7 +74,9 @@ pip install -r requirements.txt
 ### 4. Set up environment variables
 Create a `.env` file in the root directory:
 
+```
 GOOGLE_API_KEY=your_gemini_api_key_here
+```
 
 Get your free API key at [aistudio.google.com](https://aistudio.google.com)
 
@@ -112,13 +114,14 @@ streamlit run app.py
 ---
 
 ## 📁 Project Structure
-
+```
 sql-agent/
 ├── app.py          # Streamlit UI
 ├── agent.py        # LLM + SQL orchestration logic
 ├── database.py     # DB schema, sample data, query runner
 ├── requirements.txt
 └── .gitignore
+```
 
 ---
 
