@@ -83,8 +83,5 @@ if st.button("🔍 Run Query", type="primary", use_container_width=True):
 if "history" not in st.session_state:
     st.session_state.history = []
 
-if st.button("🔍 Run Query", key="run2"):
-    pass  # handled above
-
 st.divider()
 st.caption("Built with LangChain + Google Gemini + Streamlit | LLM-Powered SQL Agent")

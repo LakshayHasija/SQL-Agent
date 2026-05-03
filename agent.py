@@ -5,11 +5,11 @@ from langchain_core.prompts import PromptTemplate
 from database import get_schema, run_query
 import re
 
-load_dotenv()
+load_dotenv() #for loading GOOGLE_API_KEY from .env file
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
-    google_api_key=os.getenv("GOOGLE_API_KEY"),
+    google_api_key=os.getenv("GOOGLE_API_KEY"), #Get your API key from environment variable
     temperature=0
 )
 
